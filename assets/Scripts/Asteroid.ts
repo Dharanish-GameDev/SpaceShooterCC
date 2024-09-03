@@ -12,6 +12,7 @@ export class Asteroid extends Component
     autoDestroyTime : number =3.5;
     @property
     moveTowards:boolean=false;
+
     @property
     speed:number = 5;
 
