@@ -8,6 +8,7 @@ export class Asteroid extends Component
 {
 
     @property
+
     autoDestroyTime : number =3.5;
     @property
     moveTowards:boolean=false;
@@ -22,7 +23,8 @@ export class Asteroid extends Component
 
 
     //#region Engine lifecycle
-    start() {
+    start() 
+      {
 
         this.curLifeTime=0;
         this.rg=this.node.getComponent(RigidBody2D);
