@@ -7,6 +7,7 @@ const { ccclass, property } = _decorator;
 export class Asteroid extends Component {
 
     @property
+
     autoDestroyTime : number =3.5;
     @property
     moveTowards:boolean=false;
