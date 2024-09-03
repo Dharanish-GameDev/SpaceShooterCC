@@ -2,7 +2,8 @@ import { _decorator, Component, Node, AudioClip, AudioSourceComponent } from 'cc
 const { ccclass, property } = _decorator;
 
 @ccclass('AudioManager')
-export class AudioManager extends Component {
+export class AudioManager extends Component 
+{
 
     public static Instance : AudioManager;
     @property({ type: AudioClip })
