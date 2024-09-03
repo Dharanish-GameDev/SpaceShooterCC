@@ -22,7 +22,8 @@ export class Asteroid extends Component {
 
 
     //#region Engine lifecycle
-    start() {
+    start() 
+      {
 
         this.curLifeTime=0;
         this.rg=this.node.getComponent(RigidBody2D);
