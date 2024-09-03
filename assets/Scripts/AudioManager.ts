@@ -15,7 +15,7 @@ export class AudioManager extends Component
         AudioManager.Instance = this;
     }
     start() {
-        this.audioSource = this.getComponent(AudioSourceComponent);
+        this.audioSource = this.getComponent(AudioSourceComponent) ;
         
         if (!this.audioSource) {
             console.error('AudioSourceComponent not found on AudioManager node.');
