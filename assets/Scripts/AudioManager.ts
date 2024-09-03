@@ -11,10 +11,12 @@ export class AudioManager extends Component
 
     private audioSource: AudioSourceComponent = null;
 
-    protected onLoad(): void {
+    protected onLoad(): void 
+    {
         AudioManager.Instance = this;
     }
-    start() {
+    start() 
+    {
         this.audioSource = this.getComponent(AudioSourceComponent) ;
         
         if (!this.audioSource) {

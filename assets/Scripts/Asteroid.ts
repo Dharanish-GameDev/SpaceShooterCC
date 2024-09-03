@@ -4,7 +4,8 @@ import { SpaceShipMovement } from './SpaceShipMovement';
 const { ccclass, property } = _decorator;
 
 @ccclass('Asteroid')
-export class Asteroid extends Component {
+export class Asteroid extends Component 
+{
 
     @property
     autoDestroyTime : number =3.5;
