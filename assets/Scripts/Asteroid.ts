@@ -4,13 +4,15 @@ import { SpaceShipMovement } from './SpaceShipMovement';
 const { ccclass, property } = _decorator;
 
 @ccclass('Asteroid')
-export class Asteroid extends Component {
+export class Asteroid extends Component 
+{
 
     @property
 
     autoDestroyTime : number =3.5;
     @property
     moveTowards:boolean=false;
+
     @property
     speed:number = 5;
 
@@ -22,7 +24,8 @@ export class Asteroid extends Component {
 
 
     //#region Engine lifecycle
-    start() {
+    start() 
+      {
 
         this.curLifeTime=0;
         this.rg=this.node.getComponent(RigidBody2D);
